@@ -1,0 +1,70 @@
+body {
+  background: black;
+	height: 6500px;
+}
+
+@keyframes pretty-fade {
+  0% {
+    -webkit-filter: brightness(1) contrast(1) saturate(1);
+  }
+  100% {
+    -webkit-filter: brightness(1) contrast(3) saturate(0);
+  }
+}
+.pretty-fade {
+  animation: pretty-fade 5s infinite ease-in-out alternate;
+}
+
+.dummy {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("../img/mars-bkg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.section2 {
+	height: 250px;
+	postion: relative;
+	color: red;
+}
+
+.main-logo {
+	z-index: 10; position: absolute; padding-left: 10%; margin-top: -850px; cursor:pointer;
+}
+
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px)  {
+
+
+	.dummy {
+		padding-top: -300px;
+		margin-top: -300px;
+		
+	}
+	
+	img {
+		width: 50%;
+		position: absolute;
+		z-index: 10;
+		margin-top: -310px;
+		margin-left: -10px;
+		padding-left: -10px;
+	}
+	
+	.section2 {
+		height: 110px;
+		padding-top: 150px;
+		margin-top: 150px;
+		position: absolute;
+		z-index:15;
+	}
+	
+}
